@@ -19,7 +19,7 @@ docker run --rm --name data-version-cli -ti \
 --cap-add SYS_ADMIN \
 --device /dev/fuse \
 -v "$BASE_DIR":/app \
--v "$SECRETS_DIR":/secrets \
+# -v "$SECRETS_DIR":/secrets \
 -v ~/.gitconfig:/etc/gitconfig \
 -e GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS \
 -e GCP_PROJECT=$GCP_PROJECT \
